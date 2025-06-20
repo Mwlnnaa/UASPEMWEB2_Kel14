@@ -6,7 +6,7 @@ namespace App\Providers;
 use App\Models\JenisProduk;
 use App\Policies\JenisProdukPolicy;
 use App\Models\KategoriToko;
-use App\Policies\KategoriTokoPolicy;
+use App\Policies\KategoriTokohPolicy;
 use App\Models\Produk;
 use App\Policies\ProdukPolicy;
 use App\Models\Testimoni;
@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
     protected $policies = [
         // Daftarkan semua policy Anda di sini
         JenisProduk::class => JenisProdukPolicy::class,
-        KategoriToko::class => KategoriTokoPolicy::class,
+        KategoriTokoh::class => KategoriTokohPolicy::class,
         Produk::class => ProdukPolicy::class,
         Testimoni::class => TestimoniPolicy::class,
         User::class => UserPolicy::class,
@@ -50,7 +50,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Anda bisa juga mendaftarkan policies satu per satu di sini jika mau
         // Gate::policy(JenisProduk::class, JenisProdukPolicy::class);
-        // Gate::policy(KategoriToko::class, KategoriTokoPolicy::class);
+        // Gate::policy(KategoriTokoh::class, KategoriTokohPolicy::class);
         // Gate::policy(Produk::class, ProdukPolicy::class);
         // Gate::policy(Testimoni::class, TestimoniPolicy::class);
         // Gate::policy(User::class, UserPolicy::class);

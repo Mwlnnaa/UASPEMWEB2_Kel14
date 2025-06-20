@@ -11,11 +11,11 @@ class Testimoni extends Model
 
     protected $fillable = [
         'tanggal',
-        'nama_toko',
+        'nama_tokoh',
         'komentar',
         'rating',
         'produk_id',
-        'kategori_toko_id',
+        'kategori_tokoh_id',
     ];
 
     // Relasi Many-to-One dengan Produk
@@ -25,8 +25,8 @@ class Testimoni extends Model
     }
 
     // Relasi Many-to-One dengan KategoriToko
-    public function kategoriToko()
+    public function kategoriTokoh()
     {
-        return $this->belongsTo(KategoriToko::class);
+        return $this->belongsTo(KategoriTokoh::class);
     }
 }

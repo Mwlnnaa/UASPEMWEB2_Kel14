@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\KategoriToko;
+use App\Models\KategoriTokoh;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
-class KategoriTokoPolicy
+class KategoriTokohPolicy
 {
     public function before(User $user, string $ability): bool|null
     {
@@ -21,7 +21,7 @@ class KategoriTokoPolicy
         return $user->role === 'admin';
     }
 
-    public function view(User $user, KategoriToko $kategoriToko): bool
+    public function view(User $user, KategoriTokoh $kategoriTokoh): bool
     {
         return $user->role === 'admin';
     }
@@ -31,22 +31,22 @@ class KategoriTokoPolicy
         return $user->role === 'admin';
     }
 
-    public function update(User $user, KategoriToko $kategoriToko): bool
+    public function update(User $user, KategoriTokoh $kategoriTokoh): bool
     {
         return $user->role === 'admin';
     }
 
-    public function delete(User $user, KategoriToko $kategoriToko): bool
+    public function delete(User $user, KategoriTokoh $kategoriTokoh): bool
     {
         return $user->role === 'admin';
     }
 
-    public function restore(User $user, KategoriToko $kategoriToko): bool
+    public function restore(User $user, KategoriTokoh $kategoriTokoh): bool
     {
         return false;
     }
 
-    public function forceDelete(User $user, KategoriToko $kategoriToko): bool
+    public function forceDelete(User $user, KategoriTokoh $kategoriTokoh): bool
     {
         return false;
     }

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kategori_tokos', function (Blueprint $table) {
+        Schema::create('kategori_tokohs', function (Blueprint $table) {
             $table->id(); // int, primary key, auto-increment
             $table->string('nama', 45); // varchar(45)
             $table->timestamps(); // created_at and updated_at columns
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kategori_tokos');
+        Schema::dropIfExists('kategori_tokohs');
     }
 };

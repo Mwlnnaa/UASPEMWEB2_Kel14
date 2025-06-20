@@ -6,7 +6,7 @@ use App\Filament\Resources\TestimoniResource\Pages;
 use App\Filament\Resources\TestimoniResource\RelationManagers;
 use App\Models\Testimoni;
 use App\Models\Produk; // Import model Produk
-use App\Models\KategoriToko; // Import model KategoriToko
+use App\Models\KategoriTokoh; // Import model KategoriToko
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -48,10 +48,10 @@ class TestimoniResource extends Resource
                     ->required()
                     ->options(Produk::all()->pluck('nama', 'id'))
                     ->searchable(),
-                Select::make('kategori_toko_id')
-                    ->label('Kategori Toko')
+                Select::make('kategori_tokoh_id')
+                    ->label('Kategori Tokoh')
                     ->required()
-                    ->options(KategoriToko::all()->pluck('nama', 'id'))
+                    ->options(KategoriTokoh::all()->pluck('nama', 'id'))
                     ->searchable(),
             ]);
     }
@@ -79,8 +79,8 @@ class TestimoniResource extends Resource
                     ->label('Produk')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('kategoriToko.nama')
-                    ->label('Kategori Toko')
+                Tables\Columns\TextColumn::make('kategoriTokoh.nama')
+                    ->label('Kategori Tokoh')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
@@ -96,9 +96,9 @@ class TestimoniResource extends Resource
                 Tables\Filters\SelectFilter::make('produk_id')
                     ->label('Produk')
                     ->relationship('produk', 'nama'),
-                Tables\Filters\SelectFilter::make('kategori_toko_id')
-                    ->label('Kategori Toko')
-                    ->relationship('kategoriToko', 'nama'),
+                Tables\Filters\SelectFilter::make('kategori_tokoh_id')
+                    ->label('Kategori Tokoh')
+                    ->relationship('kategoriTokoh', 'nama'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
