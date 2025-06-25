@@ -1,17 +1,26 @@
 <x-guest-layout>
-    <!-- Back to Dashboard -->
-    <div class="mb-4 text-sm text-center">
-        <a href="{{ route('dashboard') }}" class="text-white hover:underline">
-            ← Back to Dashboard
-        </a>
-    </div>
+ 
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <!-- Login Form -->
+
+<!-- @if (session('status'))
+    <div class="mb-4 font-medium text-sm text-green-600">
+        {{ session('status') }}
+    </div>
+@endif -->
+
     <form method="POST" action="{{ route('login') }}">
         @csrf
+
+           <!-- Back to Dashboard
+    <div class="mb-4 text-sm text-center">
+        <a href="{{ route('dashboard') }}" class="text-white hover:underline">
+            ← Back to Dashboard
+        </a>
+    </div> -->
 
         <!-- Email -->
         <div>
