@@ -32,7 +32,7 @@ class TestimoniResource extends Resource
                 DatePicker::make('tanggal')
                     ->required()
                     ->default(now()),
-                Forms\Components\TextInput::make('nama_toko')
+                Forms\Components\TextInput::make('nama_tokoh')
                     ->required()
                     ->maxLength(45),
                 Forms\Components\Textarea::make('komentar')
