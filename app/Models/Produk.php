@@ -17,6 +17,7 @@ class Produk extends Model
         'rating',
         'min_stok',
         'jenis_produk_id',
+        'foto',
         'deskripsi',
     ];
 
