@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Dewi Bootstrap Template</title>
+  <title>RateIt</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -44,7 +44,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Dewi</h1>
+        <h1 class="sitename">RateIt</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -93,8 +93,8 @@
       <img src="assets/img/hero-bg.png" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">ATUR TOKO ANDA DENGAN LEBIH MUDAH.</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Kelola produk, transaksi, dan testimoni dalam satu sistem Point of Sale.</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">ATUR TOKO ANDA DENGAN LEBIH MUDAH</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Kelola produk, transaksi, dan testimoni dalam satu sistem Point of Sale</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="#about" class="btn-get-started">Mulai Sekarang!</a>
         </div>
@@ -476,7 +476,7 @@
                 <img src="assets/img/portfolio/phone.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Gadget</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Smartphone dengan fitur canggih dan desain modern.</p>
                   <a href="assets/img/portfolio/phone.jpg" title="Gadget" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -488,7 +488,7 @@
                 <img src="assets/img/portfolio/smartwatch.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Smartwatch</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Smartwatch stylish yang siap menemani aktivitas harian Anda.</p>
                   <a href="assets/img/portfolio/smartwatch.jpg" title="Smartwatch" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -500,7 +500,7 @@
                 <img src="assets/img/portfolio/cosmetic.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Cosmetics</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Rangkaian kosmetik berkualitas untuk memancarkan kecantikan alami Anda.</p>
                   <a href="assets/img/portfolio/cosmetic.jpg" title="Cosmetics" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -512,7 +512,7 @@
                 <img src="assets/img/portfolio/daily_needs.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Daily Needs</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Penuhi kebutuhan harian Anda dengan produk berkualitas dan terjangkau.</p>
                   <a href="assets/img/portfolio/daily_needs.png" title="Daily Needs" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -524,7 +524,7 @@
                 <img src="assets/img/portfolio/sofa.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Furniture</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Desain modern dan fungsional untuk hunian yang stylish dan nyaman.</p>
                   <a href="assets/img/portfolio/sofa.png" title="Furniture" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -536,7 +536,7 @@
                 <img src="assets/img/portfolio/shoes.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Shoes</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Tampil percaya diri dengan koleksi sepatu berkualitas dan penuh gaya.</p>
                   <a href="assets/img/portfolio/shoes.png" title="Shoes" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -548,7 +548,7 @@
                 <img src="assets/img/portfolio/book.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Book</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Koleksi buku inspiratif yang memperluas wawasan dan pengetahuan Anda.</p>
                   <a href="assets/img/portfolio/book.jpg" title="Book" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -560,7 +560,7 @@
                 <img src="assets/img/portfolio/tv.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>TV</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Rasakan pengalaman menonton yang imersif dengan layar jernih dan suara jernih.</p>
                   <a href="assets/img/portfolio/tv.png" title="TV" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -572,7 +572,7 @@
                 <img src="assets/img/portfolio/pants.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Pants</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Celana dengan desain modern dan bahan nyaman untuk gaya sehari-hari.</p>
                   <a href="assets/img/portfolio/pants.png" title="Pants" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -593,19 +593,19 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
-        <p>CHECK OUR TEAM</p>
+        <p>ANGGOTA TIM KAMI</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-5">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/member-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Arga Octa Ramadhan</h4>
+                <span>Ketua</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -616,12 +616,12 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/member-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Akmal Maulana</h4>
+                <span>Anggota</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -632,12 +632,28 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/member-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Adzani Naufaldo Arifuddin</h4>
+                <span>Anggota</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/member-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Noval Putra Siregar</h4>
+                <span>Anggota</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -689,7 +705,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email</h3>
-                  <p>pos@example.com</p>
+                  <p>rateitpos@example.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -748,7 +764,7 @@
             <p>Jl. Margonda Raya No.472</p>
             <p>Depok, Jawa Barat 16424</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+62 21 1234 5678</span></p>
-            <p><strong>Email:</strong> <span>pos@example.com</span></p>
+            <p><strong>Email:</strong> <span>rateitpos@example.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -784,7 +800,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>Semua Hak Cipta Dilindungi</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">RateIt</strong> <span>Semua Hak Cipta Dilindungi</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
