@@ -758,7 +758,7 @@
       <div class="row gy-3">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Dewi</span>
+            <span class="sitename">RateIt</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Jl. Margonda Raya No.472</p>
