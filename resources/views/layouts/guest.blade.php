@@ -26,7 +26,7 @@
         </a>
     </div>
 
-    {{ $slot }}
+    {{ $slot }} 
 </main>
 
     <body class="font-sans text-gray-900 antialiased">
