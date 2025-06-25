@@ -1,26 +1,10 @@
 <x-guest-layout>
- 
-
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <!-- Login Form -->
-
-<!-- @if (session('status'))
-    <div class="mb-4 font-medium text-sm text-green-600">
-        {{ session('status') }}
-    </div>
-@endif -->
-
     <form method="POST" action="{{ route('login') }}">
         @csrf
-
-           <!-- Back to Dashboard
-    <div class="mb-4 text-sm text-center">
-        <a href="{{ route('dashboard') }}" class="text-white hover:underline">
-            ← Back to Dashboard
-        </a>
-    </div> -->
 
         <!-- Email -->
         <div>
@@ -48,6 +32,7 @@
             </label>
         </div>
 
+        <!-- Tombol Login -->
         <div class="flex items-center justify-between mt-4">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
@@ -60,4 +45,12 @@
             </x-primary-button>
         </div>
     </form>
+
+    <!-- Tombol Login Sebagai Admin -->
+    <div class="mt-6 text-center">
+        <a href="{{ url('/admin/login') }}" 
+           class="inline-block px-4 py-2 border border-gray-300 rounded text-sm text-gray-700 hover:bg-gray-100 transition">
+            🔐 Login sebagai Admin
+        </a>
+    </div>
 </x-guest-layout>
