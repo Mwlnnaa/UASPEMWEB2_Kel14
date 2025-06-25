@@ -22,11 +22,11 @@
                 <a href="/" class="text-2xl font-bold text-black">Rate<span class="text-orange-400">It</span></a>
             </div>
 
-          <div class="text-center mt-6 margin-bottom-10">
-                <a href="{{ url('/dashboard') }}" class="text-sm px-4 py-2 text-white bg-gray-700 hover:bg-gray-800 rounded">
+          <!-- <div class="text-center mt-6 margin-bottom-10">
+                <a href="{{ url('/index') }}" class="text-sm px-4 py-2 text-white bg-gray-700 hover:bg-gray-800 rounded">
                     ← Kembali ke Dashboard
                 </a>
-            </div> 
+            </div>  -->
 
             <div class="w-full sm:max-w-md mx-auto mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }} {{-- Hanya ini --}}
