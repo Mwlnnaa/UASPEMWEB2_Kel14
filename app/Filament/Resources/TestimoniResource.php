@@ -66,7 +66,7 @@ class TestimoniResource extends Resource
                 Tables\Columns\TextColumn::make('tanggal')
                     ->date()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('nama_toko')
+                Tables\Columns\TextColumn::make('nama_tokoh')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('komentar')
