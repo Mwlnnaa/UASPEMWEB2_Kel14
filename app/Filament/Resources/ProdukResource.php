@@ -5,7 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\ProdukResource\Pages;
 use App\Filament\Resources\ProdukResource\RelationManagers;
 use App\Models\Produk;
-use App\Models\JenisProduk; // Import model JenisProduk
+use App\Models\JenisProduk;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -15,6 +15,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\FileUpload; // Tambahan
+use Filament\Tables\Columns\ImageColumn;  // Tambahan
 
 class ProdukResource extends Resource
 {
@@ -22,7 +24,7 @@ class ProdukResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-archive-box';
     protected static ?string $navigationGroup = 'Produk Management';
-    protected static ?int $navigationSort = 3; // Untuk mengatur urutan di sidebar
+    protected static ?int $navigationSort = 3;
 
     public static function form(Form $form): Form
     {
@@ -55,10 +57,20 @@ class ProdukResource extends Resource
                     ->required()
                     ->options(JenisProduk::all()->pluck('nama', 'id'))
                     ->searchable(),
+                FileUpload::make('foto')
+                    ->label('Foto Produk')
+                    ->image()
+                    ->directory('produk')
+                    ->imagePreviewHeight('150')
+                    ->disk('public')
+                    ->maxSize(2048)
+                    ->nullable()
+                    ->columnSpanFull(),
                 MarkdownEditor::make('deskripsi')
                     ->maxLength(65535)
                     ->columnSpanFull()
                     ->nullable(),
+                
             ]);
     }
 
@@ -66,41 +78,24 @@ class ProdukResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id') // Added ID column
-                    ->sortable()
-                    ->label('ID'),
-                Tables\Columns\TextColumn::make('kode')
-                    ->searchable()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('nama')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('id')->sortable()->label('ID'),
+                Tables\Columns\TextColumn::make('kode')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('nama')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('jenisProduk.nama')
                     ->label('Jenis Produk')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('harga')
-                    ->money('IDR')
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('stok')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('rating')
-                    ->numeric()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('min_stok')
-                    ->numeric()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('harga')->money('IDR')->sortable(),
+                Tables\Columns\TextColumn::make('stok')->numeric()->sortable(),
+                Tables\Columns\TextColumn::make('rating')->numeric()->sortable()->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('min_stok')->numeric()->sortable()->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('created_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
+
+                ImageColumn::make('foto')
+                    ->label('Foto')
+                    ->disk('public')
+                    ->toggleable(),
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('jenis_produk_id')
@@ -120,9 +115,7 @@ class ProdukResource extends Resource
 
     public static function getRelations(): array
     {
-        return [
-            //
-        ];
+        return [];
     }
 
     public static function getPages(): array
